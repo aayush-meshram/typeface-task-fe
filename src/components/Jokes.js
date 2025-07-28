@@ -8,7 +8,7 @@ const Joke = () => {
     const fetchJoke = async () => {
       // For Docker, 'host.docker.internal' is a special DNS name
       // that resolves to the internal IP address of the host machine.
-      const apiUrl = 'http://typeface-be:8080/joke';
+      const apiUrl = 'http://typeface.local/api/joke';
 
       try {
         const response = await axios.get(apiUrl);
